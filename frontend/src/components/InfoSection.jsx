@@ -7,20 +7,23 @@ const InfoSection = () => {
     {
       title: "TED",
       content1:
-        "TED (Technology, Entertainment, Design) is a global platform that hosts conferences featuring influential speakers from various fields who share their ideas and experiences.",
-    
+        "TED (Technology, Entertainment, Design) is a global platform that hosts conferences featuring influential speakers from various fields who share their innovative ideas and experiences.",
+      content2:
+        "Founded in 1984, TED has become synonymous with Ideas Worth Spreading. The main TED conference is held annually in Vancouver, Canada, and its talks cover a wide range of topics, including science, technology, and culture.",
     },
     {
       title: "TEDx",
       content1:
-        "TEDx events are independently organized TED talks that can take place anywhere in the world. These events aim to bring the spirit of TED to local communities and provide a platform to share their unique ideas.",
-      
+        "TEDx events are independently organized TED-like conferences that can take place anywhere in the world. These events aim to bring the spirit of TED to local communities and provide a platform for individuals to share their unique ideas.",
+      content2:
+        "TEDx talks cover a broad spectrum of subjects, often reflecting the unique challenges and innovations of a particular region.",
     },
     {
       title: "TEDxBVCOE",
       content1:
         "TEDxBVCOE is a specific instance of a TEDx event affiliated with Bharati Vidyapeeth College of Engineering (BVCOE) in Delhi, India. Organized independently by a dedicated local team of volunteers, TEDxBVCOE serves as a platform for students, educators, and professionals to share their insights and ideas with the community.",
-    
+      content2:
+        "The BVCOE in TEDxBVCOE represents Bharati Vidyapeeth College of Engineering, the hosting institution.",
     },
   ];
 
@@ -56,9 +59,7 @@ const InfoSection = () => {
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 {item.content1}
               </p>
-              <p className="text-muted-foreground/80 text-lg leading-relaxed text-right italic">
-                {item.content2}
-              </p>
+              
             </div>
           ))}
         </div>
