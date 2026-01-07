@@ -28,13 +28,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const urls = {
-    TEDxBVCOE26: "https://www.tedxbvcoe.in/",
-  TEDxBVCOE25: "https://www.tedxbvcoe.in/",
-  TEDxBVCOE23: "https://te-dx-bvcoe-2023.vercel.app/",
-  TEDxBVCOE22: "https://tedxbvcoe-website-66747n5xw-bvcoetedx.vercel.app/",
-  TEDxBVCOE21: "https://tedxbvcoe-website-66747n5xw-bvcoetedx.vercel.app/2021",
-};
+ 
 
 
   const navItems = ["speakers", "tickets", "partners", "team", "faqs", "contact"];
@@ -59,7 +53,10 @@ const Navbar = () => {
           ))}
         </div>
 
-        <h1 className="text-2xl font-bold gradient-text font-space">TEDxBVCOE</h1>
+        <h1 className=" absolute left-[45%] text-2xl font-bold gradient-text" style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}>
+              TEDxBVCOE
+         </h1>
+
 
         <div className="flex items-center gap-8">
           <button
@@ -75,21 +72,7 @@ const Navbar = () => {
             Contact
           </button>
 
-          <select
-            value={selectedEvent}
-            onChange={(e) => {
-              setSelectedEvent(e.target.value);
-              window.open(urls[e.target.value], "_blank");
-            }}
-            className="bg-transparent border border-primary/30 rounded-lg px-3 py-1.5 text-foreground text-sm cursor-pointer hover:border-primary transition-colors"
-          >
-            <option value="TEDxBVCOE26" className="bg-background text-foreground">TEDxBVCOE26</option>
-            <option value="TEDxBVCOE25" className="bg-background text-foreground">TEDxBVCOE25</option>
-        
-            <option value="TEDxBVCOE23" className="bg-background text-foreground">TEDxBVCOE23</option>
-            <option value="TEDxBVCOE22" className="bg-background text-foreground">TEDxBVCOE22</option>
-            <option value="TEDxBVCOE21" className="bg-background text-foreground">TEDxBVCOE21</option>
-          </select>
+         
         </div>
       </nav>
 

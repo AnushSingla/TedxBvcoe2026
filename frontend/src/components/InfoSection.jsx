@@ -65,6 +65,8 @@ const InfoSection = () => {
         </div>
       </div>
     </section>
+
+    
   );
 };
 
