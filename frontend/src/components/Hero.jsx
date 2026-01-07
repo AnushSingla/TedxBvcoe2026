@@ -20,7 +20,7 @@ const Hero = () => {
 
 
 
-      {/* LIGHT GLOW / BUILDING HIGHLIGHT */}
+      
       <div className={`
         absolute inset-0
         z-[3]
@@ -30,7 +30,7 @@ const Hero = () => {
         bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2),transparent_70%)]
       `} />
 
-      {/* BUILDING REVEAL */}
+      
       <div className="absolute flex items-center justify-center w-full h-full z-[5]">
         <div className={`reveal-mask ${stage.eye ? "open" : ""} translate-y-[59px] flex items-center justify-center`}>
           <img
@@ -73,7 +73,7 @@ const Hero = () => {
         <div className="bg-red-700 h-2 w-ful font-bold" role="separator"></div>
       </div>
 
-      {/* BOTTOM MARQUEE */}
+      
       <div className="absolute bottom-0 left-0 right-0 z-[70] overflow-hidden bg-black-600 py-2">
         <div className="bg-red-700 h-2 w-ful font-bold" role="separator"></div>
         <div className="flex animate-marquee-fast">
@@ -98,7 +98,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* SHADOW MAN */}
+   
       <img
         src="shadow.png"
         alt="speaker shadow"
@@ -116,8 +116,7 @@ const Hero = () => {
         `}
       />
 
-      {/* TEDx TEXT ABOVE BUILDING */}
-      {/* T  */}
+      
 <h1
   className={`
     absolute bottom-[60%] left-[33.5%]
@@ -178,7 +177,7 @@ const Hero = () => {
   <span className="text-red-700 font-black">X</span>
 </h1>
 
-{/* x BVCOE */}
+
 <h1
   className={`
     absolute bottom-[60%] right-[28%]
@@ -204,7 +203,7 @@ const Hero = () => {
 
       <style>
         {`
-          /* Reveal mask for building */
+        
           @keyframes marquee {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -213,7 +212,6 @@ const Hero = () => {
             animation: marquee 10s linear infinite;
           }
 
-          /* Reveal mask for building */
           .reveal-mask {
             width: 0px;
             height: 0px;
@@ -227,7 +225,7 @@ const Hero = () => {
           }
           
 
-          /* Glow pulse for building */
+          
           @keyframes pulseGlow {
             0% { opacity: 0.2; filter: brightness(1); }
             50% { opacity: 0.4; filter: brightness(1.3); }
@@ -258,7 +256,7 @@ const Hero = () => {
   animation: sunburstPulse 4s ease-in-out infinite alternate;
 }
 
-/* Optional: Sun rays overlay using pseudo element */
+
 .sun-rays {
   content: "";
   position: absolute;
@@ -276,7 +274,7 @@ const Hero = () => {
 
 
 
-          /* Shadow man entrance */
+         
           @keyframes manEntrance {
             0% { opacity: 0; transform: translateY(40px) scale(0.5); }
             100% { opacity: 1; transform: translateY(0) scale(1); }
@@ -285,7 +283,7 @@ const Hero = () => {
             animation: manEntrance 1.4s ease-out forwards;
           }
 
-          /* TEDx rise cinematic */
+          
           @keyframes tedxRise {
             0% { opacity: 0; transform: translateY(120px) scale(0.8); }
             60% { opacity: 1; transform: translateY(-20px) scale(1.05); }
