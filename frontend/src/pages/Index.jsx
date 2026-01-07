@@ -15,10 +15,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       <Hero />
       <div className="flex flex-col bg-background">
-        <br></br>
+       
         <Date scrollToElement={scrollToElement} />
         <InfoSection />
         <br></br>
