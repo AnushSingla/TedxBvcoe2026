@@ -93,7 +93,7 @@ const Hero = () => {
           w-[100px] sm:w-[160px] lg:w-[200px]
           opacity-0
           transition-opacity duration-[2000ms]
-          ${stage.eye ? "opacity-100 animate-pulse-glow" : ""}
+          ${stage.eye ? "opacity-100 translate-y-0 scale-100 animate-man-entrance" : ""}
           bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2),transparent_70%)]
         `} />
 
