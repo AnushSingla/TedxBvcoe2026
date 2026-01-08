@@ -97,58 +97,89 @@ const Hero = () => {
           bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2),transparent_70%)]
         `} />
 
-      <div
+      {/* ================== TED / X / BVCOE GROUP ================== */}
+<div
+  className="
+    absolute
+    bottom-[72%] sm:bottom-[55%] lg:bottom-[60%]
+    left-1/2 -translate-x-1/2
+    z-[60]
+    w-full px-4
+    flex items-baseline justify-center gap-1 sm:gap-2 md:gap-4
+  "
+>
+  {/* TED  */}
+  {['T', 'E', 'D'].map((char) => (
+    <div
+      key={char}
+      className="
+        -translate-y-[30px] sm:-translate-y-[1px]
+        translate-x-0
+      "
+    >
+      <h1
         className={`
-        absolute 
-        bottom-[72%] sm:bottom-[55%] lg:bottom-[60%] 
-        left-1/2 -translate-x-1/2 
-        z-[60]
-        flex items-baseline justify-center gap-1 sm:gap-2 md:gap-4
-        w-full px-4
-      `}
+          text-red-700 font-black tracking-tight leading-none
+          text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem]
+          translate-y-[120px] scale-[0.8] opacity-0
+          transition-all duration-[1300ms]
+          ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
+        `}
+        style={{ fontFamily: "Inter, sans-serif" }}
       >
-        {['T', 'E', 'D'].map((char, index) => (
-          <h1
-            key={char}
-            className={`
-              text-red-700 font-black tracking-tight leading-none
-              text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem]
-              translate-y-[120px] scale-[0.8] opacity-0
-              transition-all duration-[1300ms]
-              ${stage.text ? "opacity-100 translate-y-0 scale-100 animate-tedx-rise" : ""}
-            `}
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            {char}
-          </h1>
-        ))}
+        {char}
+      </h1>
+    </div>
+  ))}
 
-        <h1
-          className={`
-            text-red-700 font-black tracking-tight leading-none
-            text-5xl sm:text-6xl md:text-[8rem] lg:text-[9rem]
-            translate-y-[120px] scale-[0.8] opacity-0
-            transition-all duration-[1300ms]
-            ${stage.text ? "opacity-100 translate-y-0 scale-100 animate-tedx-rise" : ""}
-          `}
-          style={{ fontFamily: "Inter, sans-serif" }}
-        >
-          X
-        </h1>
+  {/*  X  */}
+  <div
+    className="
+      -translate-y-[20px] sm:-translate-y-[40px]
+      translate-x-[2px] sm:translate-x-[6px]
+    "
+  >
+    <h1
+      className={`
+        text-red-700 font-black tracking-tight leading-none
+        text-5xl sm:text-6xl md:text-[8rem] lg:text-[9rem]
+        translate-y-[125px] scale-[0.8] opacity-0
+        transition-all duration-[1300ms]
+        ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
+      `}
+      style={{ fontFamily: "Inter, sans-serif" }}
+    >
+      X
+    </h1>
+  </div>
 
-        <div
-           className={`
-            flex items-end
-            translate-y-[120px] scale-[0.8] opacity-0
-            transition-all duration-[1300ms]
-            ${stage.text ? "opacity-100 translate-y-0 scale-100 animate-tedx-rise" : ""}
-           `}
-        >
-          <span className="text-white font-light tracking-[0.15em] sm:tracking-[0.25em] text-xl sm:text-3xl md:text-4xl lg:text-5xl ml-2 sm:ml-4">
-            BVCOE
-          </span>
-        </div>
-      </div>
+  {/*BVCOE */}
+  <div
+    className="
+      -translate-y-[14px] sm:-translate-y-[-15px]
+      translate-x-[6px] sm:translate-x-[-130px]
+      flex items-end
+    "
+  >
+    <div
+      className={`
+        translate-y-[120px] scale-[0.8] opacity-0
+        transition-all duration-[1300ms]
+        ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
+      `}
+    >
+      <span className="
+        text-white font-medium
+        tracking-[0.15em] sm:tracking-[0.25em]
+        text-xl sm:text-3xl md:text-4xl lg:text-5xl
+        ml-2 sm:ml-4
+      ">
+        BVCOE
+      </span>
+    </div>
+  </div>
+</div>
+
 
       <style>
         {`
