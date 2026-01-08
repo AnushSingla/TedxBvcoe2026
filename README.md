@@ -46,30 +46,15 @@ Make sure you have the following installed:
 git clone https://github.com/tedxbvcoe/website.git
 
 # Navigate to the project directory
-cd website
+cd frontend
 
 # Install dependencies
 npm install
-```
 
-### Development
+#Starting Website 
+npm start
 
-```bash
-# Start the development server
-npm run dev
-```
 
-The app will be available at `http://localhost:5173`
-
-### Production Build
-
-```bash
-# Create optimized production build
-npm run build
-
-# Preview production build locally
-npm run preview
-```
 
 ---
 
