@@ -92,13 +92,13 @@ const Tickets = () => {
           </h3>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <div className="text-center">
-              <p className="text-lg text-foreground font-medium">Priyal Agarwal</p>
-              <p className="text-muted-foreground">+91 9136284851</p>
+              <p className="text-lg text-foreground font-medium">Hrishabh Singh</p>
+              <p className="text-muted-foreground">+91 9354286977</p>
             </div>
             <div className="hidden sm:block w-px bg-border" />
             <div className="text-center">
-              <p className="text-lg text-foreground font-medium">Bhrigu Tayal</p>
-              <p className="text-muted-foreground">+91 79824 75557</p>
+              <p className="text-lg text-foreground font-medium">Harsh Choudhary</p>
+              <p className="text-muted-foreground">+91 8595993906</p>
             </div>
           </div>
         </div>

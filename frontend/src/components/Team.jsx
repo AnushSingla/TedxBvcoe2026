@@ -2,84 +2,103 @@ import { ExternalLink } from "lucide-react";
 
 const organizers = [
   {
-    name: "Paridhi Harit",
+    name: "Hrishabh Singh",
     role: "Organizer",
     description:
       "Leading TEDxBVCOE with vision and passion to create impactful experiences.",
-    link: "https://www.linkedin.com/in/reachparidhi",
-    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    link: "https://www.linkedin.com/in/hrishabh-singh-24a724279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "",
   },
   {
-    name: "Ridhi Gupta",
+    name: "Sanjana Gupta",
     role: "Co-Organizer",
     description:
       "Driving collaborative excellence and seamless event coordination.",
-    link: "http://www.linkedin.com/in/ridhi-gupta07",
-    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    link: " https://www.linkedin.com/in/sanjana-gupta-5161b8315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "",
   },
 ];
 
 const heads = [
   {
-    name: "Uday Singh Pundeer",
-    role: "Head of Productions",
+    name: "Abhishek Kumar",
+    role: "Head of Production",
     description:
       "Crafting immersive audiovisual experiences for every event.",
-    link: "https://www.linkedin.com/in/uday-pundeer-460580267",
+    link: "https://www.linkedin.com/in/abhishekk19?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Abhinav Singh",
-    role: "Head of Productions",
+    name: "Harsh Choudhary",
+    role: "Head of Partnership",
     description: "Ensuring flawless execution of all production elements.",
-    link: "",
+    link: "https://www.linkedin.com/in/harsh-kumar-choudhary?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Bhrigu Tayal",
-    role: "Head of Operations",
+    name: "Aakar Roy",
+    role: "Head of Partnership",
+    description: "Ensuring flawless execution of all production elements.",
+    link: "www.linkedin.com/in/aakar-roy-a689aa333",
+  },
+  {
+    name: "Riddhi Sharma",
+    role: "Head of Social Media",
     description: "Orchestrating logistics and operations with precision.",
-    link: "https://www.linkedin.com/in/bhrigu-tayal-0aa469212/",
+    link: "https://www.linkedin.com/in/riddhi-sharma-2b3171274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Priyal Agarwal",
-    role: "Head of Operations",
-    description: "Managing seamless event operations and attendee experience.",
+    name: "Hitesh Kumar",
+    role: "Head of Design",
+    description: "Creating stunning visual identities and design systems.",
     link: "https://www.linkedin.com/in/reach-priyalagarwal",
   },
   {
-    name: "Harshvardhan Singh Rajput",
+    name: "Nikhil Singh",
     role: "Head of Design",
     description: "Creating stunning visual identities and design systems.",
-    link: "",
+    link: "https://www.linkedin.com/in/nikhil-singh-555357252/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+ 
   {
-    name: "Maitri",
-    role: "Head of Content",
+    name: "Anvi Tyagi",
+    role: "Head of Event & Operations",
     description: "Weaving compelling narratives that inspire and engage.",
-    link: "https://www.linkedin.com/in/maitri-65b510257/",
+    link: "https://www.linkedin.com/in/anvi-tyagi-a19629323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Devansh Biswas",
-    role: "Head of Publicity",
+    name: "Rishabh Kotnala",
+    role: "Head of Event & Operations",
     description: "Amplifying our message to reach wider audiences.",
-    link: "https://www.linkedin.com/in/devansh-biswas-606666214",
+    link: "https://www.linkedin.com/in/rishabh-kotnala-545874263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
-    name: "Aditya Singh",
+    name: "Aditya Tyagi",
     role: "Head of Publicity",
     description: "Building strategic partnerships and brand awareness.",
-    link: "https://in.linkedin.com/in/dikkey-kumar-singh-36a6b12ab",
+    link: "https://www.linkedin.com/in/aditya-tyagi-003157333/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
-    name: "Aditya Shrivastav",
+    name: "Kuldeep Singh",
+    role: "Head of Publicity",
+    description: "Building strategic partnerships and brand awareness.",
+    link: "https://www.linkedin.com/in/kuldeep-singh-2b4b3930b/",
+  },
+  {
+    name: "Anush Singla",
     role: "Head of Technical",
     description: "Powering our digital presence with cutting-edge solutions.",
-    link: "https://www.linkedin.com/in/reachshrivastav",
+    link: "https://www.linkedin.com/in/anush-singla-1b0899311/",
   },
   {
-    name: "Aashima Bathla",
-    role: "Head of Social Media",
+    name: "Avani Sharma",
+    role: "Head of Curation",
     description: "Curating engaging social content and community building.",
-    link: "https://www.linkedin.com/in/aashima-bathla",
+    link: "https://www.linkedin.com/in/avani-sharma-aa1134329/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+   {
+    name: "Devanshu Anand",
+    role: "Head of Curation",
+    description: "Curating engaging social content and community building.",
+    link: "https://www.linkedin.com/in/devanshu-anand-702844284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 

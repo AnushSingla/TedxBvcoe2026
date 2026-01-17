@@ -16,12 +16,12 @@ const InfoSection = () => {
       content1:
         "TEDx events are independently organized TED-like conferences that can take place anywhere in the world. These events aim to bring the spirit of TED to local communities and provide a platform for individuals to share their unique ideas.",
       content2:
-        "TEDx talks cover a broad spectrum of subjects, often reflecting the unique challenges and innovations of a particular region.",
+        "It cover a broad spectrum of subjects, often reflecting the unique challenges and innovations of a particular region.",
     },
     {
       title: "TEDxBVCOE",
       content1:
-        "TEDxBVCOE is a specific instance of a TEDx event affiliated with Bharati Vidyapeeth College of Engineering (BVCOE) in Delhi, India. Organized independently by a dedicated local team of volunteers, TEDxBVCOE serves as a platform for students, educators, and professionals to share their insights and ideas with the community.",
+        "TEDxBVCOE is an instance of a TEDx event affiliated with Bharati Vidyapeeth College of Engineering (BVCOE) in Delhi, India.TEDxBVCOE serves as a platform for students, educators, and professionals to share their insights and ideas with the community.",
       content2:
         "The BVCOE in TEDxBVCOE represents Bharati Vidyapeeth College of Engineering, the hosting institution.",
     },
@@ -46,7 +46,7 @@ const InfoSection = () => {
           ))}
         </div>
 
-        <div className="relative min-h-[280px]">
+        <div className="relative min-h-[300px]">
           {items.map((item, index) => (
             <div
               key={index}

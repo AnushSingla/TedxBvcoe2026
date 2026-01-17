@@ -46,7 +46,7 @@ const speakers = [
 ];
 
 const Speakers = () => {
-  return ( <div class="text-center text-4xl sm:text-5xl lg:text-6xl font-extrabold text-red-600 tracking-wide uppercase animate-pulse">
+  return ( <div id ="speakers" class="text-center text-4xl sm:text-5xl lg:text-6xl font-extrabold text-red-600 tracking-wide uppercase animate-pulse">
   SPEAKERS COMING SOON
 </div>
 

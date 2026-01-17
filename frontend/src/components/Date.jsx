@@ -14,7 +14,7 @@ export default function Date({ scrollToElement }) {
         <p className="text-primary text-sm font-semibold uppercase tracking-wider mb-1">
           Date
         </p>
-        <p className="text-3xl sm:text-4xl font-bold text-foreground">9th April</p>
+        <p className="text-3xl sm:text-4xl font-bold text-foreground">COMING SOON</p>
       </div>
 
       {/* Year Box */}
@@ -25,7 +25,7 @@ export default function Date({ scrollToElement }) {
         <p className="text-primary text-sm font-semibold uppercase tracking-wider mb-1">
           Year
         </p>
-        <p className="text-3xl sm:text-4xl font-bold text-foreground">2025</p>
+        <p className="text-3xl sm:text-4xl font-bold text-foreground">2026</p>
       </div>
 
       {/* Tickets Button */}

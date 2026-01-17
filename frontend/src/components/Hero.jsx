@@ -14,16 +14,32 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-background flex items-center justify-center">
+    <section
+      className="
+        relative
+        h-[100svh]
+        w-full
+        overflow-hidden
+        bg-background
+        flex
+        items-center
+        justify-center
+        z-0
+      "
+      style={{
+        paddingTop: "80px", // navbar height
+        isolation: "isolate", // 🔑 z-index fix
+      }}
+    >
       <div
         className={`
-        absolute inset-0
-        z-[3]
-        opacity-0
-        transition-opacity duration-[2000ms]
-        ${stage.eye ? "opacity-100 animate-pulse-glow" : ""}
-        bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2),transparent_70%)]
-      `}
+          absolute inset-0
+          z-[3]
+          opacity-0
+          transition-opacity duration-[2000ms]
+          ${stage.eye ? "opacity-100 animate-pulse-glow" : ""}
+          bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2),transparent_70%)]
+        `}
       />
 
       <div className="absolute flex bottom-[15%] sm:bottom-[0%] items-center justify-center w-full h-full z-[5]">
@@ -40,43 +56,25 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute top-12 left-0 right-0 z-[70] overflow-hidden bg-black-600 py-1 sm:py-2">
-        <div className="flex animate-marquee-fast">
-          <div className="flex whitespace-nowrap">
-            {[...Array(7)].map((_, i) => (
-              <span key={i} className="text-red-700 text-sm sm:text-xl font-bold mx-4 sm:mx-8">
-                अंतः अस्ति प्रारंभ
-              </span>
-            ))}
-          </div>
-          <div className="flex whitespace-nowrap">
-            {[...Array(7)].map((_, i) => (
-              <span key={i} className="text-red-700 text-sm sm:text-xl font-bold mx-4 sm:mx-8">
-                अंतः अस्ति प्रारंभ
-              </span>
-            ))}
-          </div>
-        </div>
-        <div className="bg-red-700 h-1 sm:h-2 w-full font-bold" role="separator"></div>
+      <div className="absolute top-12 left-0 right-0 z-[10] overflow-hidden py-1 sm:py-2">
+        <div className="bg-red-700 h-1 sm:h-2 w-full font-bold" />
       </div>
 
-      <div className="absolute bottom-[35%] sm:bottom-0 left-0 right-0 z-[70] overflow-hidden bg-black-600 py-1 sm:py-2">
-        <div className="bg-red-700 h-1 sm:h-2 w-full font-bold" role="separator"></div>
+      <div className="absolute bottom-[35%] sm:bottom-0 left-0 right-0 z-[10] overflow-hidden py-1 sm:py-2">
+        <div className="bg-red-700 h-1 sm:h-2 w-full font-bold" />
         <div className="flex animate-marquee-fast">
-          <div className="flex whitespace-nowrap">
-             {[...Array(7)].map((_, i) => (
-              <span key={i} className="text-red-700 text-sm sm:text-xl font-bold mx-4 sm:mx-8">
-                अंतः अस्ति प्रारंभ
-              </span>
-            ))}
-          </div>
-          <div className="flex whitespace-nowrap">
-             {[...Array(7)].map((_, i) => (
-              <span key={i} className="text-red-700 text-sm sm:text-xl font-bold mx-4 sm:mx-8">
-                अंतः अस्ति प्रारंभ
-              </span>
-            ))}
-          </div>
+          {[...Array(2)].map((_, block) => (
+            <div key={block} className="flex whitespace-nowrap">
+              {[...Array(7)].map((_, i) => (
+                <span
+                  key={i}
+                  className="text-red-700 text-sm sm:text-xl font-bold mx-4 sm:mx-8"
+                >
+                  अंतः अस्ति प्रारंभ
+                </span>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
 
@@ -89,154 +87,120 @@ const Hero = () => {
           bottom-[5%]
           left-1/2
           -translate-x-1/2
-          z-[40]
+          z-[8]
           w-[100px] sm:w-[160px] lg:w-[200px]
           opacity-0
           transition-opacity duration-[2000ms]
-          ${stage.eye ? "opacity-100 translate-y-0 scale-100 animate-man-entrance" : ""}
-          bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2),transparent_70%)]
-        `} />
-
-      {/* ================== TED / X / BVCOE GROUP ================== */}
-<div
-  className="
-    absolute
-    bottom-[72%] sm:bottom-[55%] lg:bottom-[60%]
-    left-1/2 -translate-x-1/2
-    z-[60]
-    w-full px-4
-    flex items-baseline justify-center gap-1 sm:gap-2 md:gap-4
-  "
->
-  {/* TED  */}
-  {['T', 'E', 'D'].map((char) => (
-    <div
-      key={char}
-      className="
-        -translate-y-[30px] sm:-translate-y-[1px]
-        translate-x-0
-      "
-    >
-      <h1
-        className={`
-          text-red-700 font-black tracking-tight leading-none
-          text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem]
-          translate-y-[120px] scale-[0.8] opacity-0
-          transition-all duration-[1300ms]
-          ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
+          ${stage.eye ? "opacity-100 animate-man-entrance" : ""}
         `}
-        style={{ fontFamily: "Inter, sans-serif" }}
+      />
+
+      {/* TEDx TEXT */}
+      <div
+        className="
+          absolute
+          bottom-[72%] sm:bottom-[55%] lg:bottom-[60%]
+          left-1/2 -translate-x-1/2
+          z-[9]
+          w-full px-4
+          flex items-baseline justify-center gap-1 sm:gap-2 md:gap-4
+        "
       >
-        {char}
-      </h1>
-    </div>
-  ))}
-
-  {/*  X  */}
-  <div
-    className="
-      -translate-y-[20px] sm:-translate-y-[40px]
-      translate-x-[2px] sm:translate-x-[6px]
-    "
-  >
-    <h1
-      className={`
-        text-red-700 font-black tracking-tight leading-none
-        text-5xl sm:text-6xl md:text-[8rem] lg:text-[9rem]
-        translate-y-[125px] scale-[0.8] opacity-0
-        transition-all duration-[1300ms]
-        ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
-      `}
-      style={{ fontFamily: "Inter, sans-serif" }}
-    >
-      X
-    </h1>
-  </div>
-
-  {/*BVCOE */}
-  <div
-    className="
-      -translate-y-[14px] sm:-translate-y-[-15px]
-      translate-x-[6px] sm:translate-x-[-130px]
-      flex items-end
-    "
-  >
-    <div
-      className={`
-        translate-y-[120px] scale-[0.8] opacity-0
-        transition-all duration-[1300ms]
-        ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
-      `}
-    >
-      <span className="
-        text-white font-medium
-        tracking-[0.15em] sm:tracking-[0.25em]
-        text-xl sm:text-3xl md:text-4xl lg:text-5xl
-        ml-2 sm:ml-4
-      ">
-        BVCOE
-      </span>
-    </div>
-  </div>
-</div>
-
-
-      <style>
-        {`
-          @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          .animate-marquee-fast {
-            animation: marquee 10s linear infinite;
-          }
-
-          .reveal-mask {
-            width: 0px;
-            height: 0px;
-            border-radius: 50%;
-            overflow: hidden;
-            transition: width 1.8s ease-out, height 1.8s ease-out;
-          }
-          .reveal-mask.open {
-            width: 90vw;
-            height: 90vw;
-          }
-          @media (min-width: 640px) {
-            .reveal-mask.open {
-              width: 1000px;
-              height: 1000px;
-            }
-          }
-
-          @keyframes pulseGlow {
-            0% { opacity: 0.2; filter: brightness(1); }
-            50% { opacity: 0.4; filter: brightness(1.3); }
-            100% { opacity: 0.2; filter: brightness(1); }
-          }
-          .animate-pulse-glow {
-            animation: pulseGlow 2s ease-in-out infinite;
-          }
-
-          @keyframes manEntrance {
-            0% { opacity: 0; transform: translateY(40px) scale(0.5); }
-            100% { opacity: 1; transform: translateY(0) scale(1); }
-          }
-          .animate-man-entrance {
-            animation: manEntrance 1.4s ease-out forwards;
-          }
-
-          @keyframes tedxRise {
-            0% { opacity: 0; transform: translateY(120px) scale(0.8); }
-            60% { opacity: 1; transform: translateY(-20px) scale(1.05); }
-            100% { opacity: 1; transform: translateY(0) scale(1); }
-          }
-          .animate-tedx-rise { animation: tedxRise 1.3s ease-out forwards; }
+        {["T", "E", "D"].map((char) => (
+          <h1
+            key={char}
+            className={`
+              text-red-700 font-black tracking-tight leading-none
+              text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem]
+              translate-y-[120px] scale-[0.8] opacity-0
+              transition-all duration-[1300ms]
+              ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
             `}
-          </style>
-        </div>
-    
-        )
-      };
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            {char}
+          </h1>
+        ))}
+
+        <h1
+          className={`
+            text-red-700 font-black tracking-tight leading-none
+            text-5xl sm:text-6xl md:text-[8rem] lg:text-[9rem]
+            translate-y-[125px] scale-[0.8] opacity-0
+            transition-all duration-[1300ms]
+            ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
+          `}
+        >
+          X
+        </h1>
+
+        <span
+          className={`
+            text-white font-medium
+            tracking-[0.15em] sm:tracking-[0.25em]
+            text-xl sm:text-3xl md:text-4xl lg:text-5xl
+            translate-y-[120px] scale-[0.8] opacity-0
+            transition-all duration-[1300ms]
+            ${stage.text ? "opacity-100 scale-100 animate-tedx-rise" : ""}
+          `}
+        >
+          BVCOE
+        </span>
+      </div>
+
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee-fast {
+          animation: marquee 10s linear infinite;
+        }
+
+        .reveal-mask {
+          width: 0;
+          height: 0;
+          border-radius: 50%;
+          overflow: hidden;
+          transition: width 1.8s ease-out, height 1.8s ease-out;
+        }
+        .reveal-mask.open {
+          width: 90vw;
+          height: 90vw;
+        }
+        @media (min-width: 640px) {
+          .reveal-mask.open {
+            width: 1000px;
+            height: 1000px;
+          }
+        }
+
+        @keyframes pulseGlow {
+          0%,100% { opacity: 0.2; }
+          50% { opacity: 0.4; }
+        }
+        .animate-pulse-glow {
+          animation: pulseGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes manEntrance {
+          from { opacity: 0; transform: translateY(40px) scale(0.5); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .animate-man-entrance {
+          animation: manEntrance 1.4s ease-out forwards;
+        }
+
+        @keyframes tedxRise {
+          0% { opacity: 0; transform: translateY(120px) scale(0.8); }
+          100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .animate-tedx-rise {
+          animation: tedxRise 1.3s ease-out forwards;
+        }
+      `}</style>
+    </section>
+  );
+};
 
 export default Hero;

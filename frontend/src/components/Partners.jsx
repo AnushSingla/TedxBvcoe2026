@@ -1,28 +1,38 @@
-const partners = [
-  { name: "XTCY", logo: "https://placehold.co/200x100/1a1a1a/eb0028?text=XTCY" },
-  { name: "UniStyl", logo: "https://placehold.co/300x100/1a1a1a/eb0028?text=UniStyl" },
-  { name: "Farmley", logo: "https://placehold.co/200x120/1a1a1a/eb0028?text=Farmley" },
-];
+const partners = ["XTCY", "UniStyl", "Farmley"];
 
 const Partners = () => {
   return (
-    <section id="partners" className="py-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="section-header gradient-text mb-16">OUR PARTNERS</h2>
+    <section
+      id="partners"
+      className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
+    >
+      <div className="relative max-w-6xl mx-auto text-center">
+        {/* Header */}
+        <h2 className="section-header gradient-text mb-14">
+          Our Partners
+        </h2>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
-          {partners.map((partner, index) => (
-            <div
+        {/* Partners */}
+        <div className="flex flex-wrap justify-center gap-x-10 gap-y-8 sm:gap-x-16">
+          {partners.map((name, index) => (
+            <span
               key={index}
-              className="sponsor-logo hover-lift"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="
+                relative
+                text-xl sm:text-2xl lg:text-3xl
+                font-semibold tracking-wide
+                text-white/70
+                transition-all duration-300
+                hover:text-red-500
+                after:absolute after:left-0 after:-bottom-1
+                after:h-[2px] after:w-0
+                after:bg-red-500
+                after:transition-all after:duration-300
+                hover:after:w-full
+              "
             >
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                className="h-20 lg:h-24 w-auto object-contain"
-              />
-            </div>
+              {name}
+            </span>
           ))}
         </div>
       </div>
