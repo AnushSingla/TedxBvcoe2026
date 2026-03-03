@@ -14,7 +14,7 @@ export default function Date({ scrollToElement }) {
         <p className="text-primary text-sm font-semibold uppercase tracking-wider mb-1">
           Date
         </p>
-        <p className="text-3xl sm:text-4xl font-bold text-foreground">COMING SOON</p>
+        <p className="text-3xl sm:text-4xl font-bold text-foreground">20ᵗʰ March</p>
       </div>
 
       {/* Year Box */}

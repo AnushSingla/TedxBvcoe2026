@@ -9,7 +9,7 @@ const Partners = () => {
       <div className="relative max-w-6xl mx-auto text-center">
         {/* Header */}
         <h2 className="section-header gradient-text mb-14">
-          Our Partners
+          Previous Partners
         </h2>
 
         {/* Partners */}

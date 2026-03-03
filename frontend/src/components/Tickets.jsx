@@ -2,31 +2,33 @@ import { Check, Phone } from "lucide-react";
 
 const tickets = [
   {
-    name: "Early Bird",
-    price: "₹299",
-    features: ["General Admission", "Event Swag", "Networking"],
+    name: "Student",
+    price: "₹149",
+    features: ["General Admission", "Student ID Required" , "Event Swag", "Networking"],
   },
   {
     name: "Standard",
-    price: "₹499",
-    features: ["General Admission", "Event Swag", "Networking", "Certificate"],
-  },
-  {
-    name: "Premium",
-    price: "₹799",
-    features: ["Priority Seating", "Event Swag", "Networking", "Certificate", "Lunch"],
+    price: "₹199",
+    features: ["General Admission", "Event Swag", "Networking"],
     popular: true,
   },
   {
-    name: "VIP",
-    price: "₹1299",
-    features: ["Front Row Seats", "Premium Swag", "VIP Networking", "Certificate", "Lunch", "Meet & Greet"],
+    name: "Duo",
+    price: "₹250",
+    features: ["General Admission", "Event Swag", "Networking"],
+    
   },
   {
-    name: "Student",
-    price: "₹199",
-    features: ["General Admission", "Student ID Required", "Certificate"],
+    name: "Quad (4)",
+    price: "₹499",
+    features: ["General Admission", "Event Swag", "Networking"],
   },
+  {
+    name: "VIP",
+    price: "₹799",
+    features: ["Front Row Seats", "Premium Swag", "VIP Networking" , "Certificate" , "Lunch" , "Speaker Meet and Greet"],
+  },
+  
 ];
 
 const scrollToElement = (id, offset = 0) => {
