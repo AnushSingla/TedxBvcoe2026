@@ -8,10 +8,24 @@ const Hero = () => {
   });
 
   useEffect(() => {
-    setTimeout(() => setStage((s) => ({ ...s, eye: true })), 500);
-    setTimeout(() => setStage((s) => ({ ...s, man: true })), 2000);
-    setTimeout(() => setStage((s) => ({ ...s, text: true })), 3000);
-  }, []);
+  const t1 = setTimeout(() => {
+    setStage((s) => ({ ...s, eye: true }));
+  }, 150);
+
+  const t2 = setTimeout(() => {
+    setStage((s) => ({ ...s, man: true }));
+  }, 600);
+
+  const t3 = setTimeout(() => {
+    setStage((s) => ({ ...s, text: true }));
+  }, 950);
+
+  return () => {
+    clearTimeout(t1);
+    clearTimeout(t2);
+    clearTimeout(t3);
+  };
+}, []);
 
   return (
     <section

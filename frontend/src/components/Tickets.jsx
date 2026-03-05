@@ -55,7 +55,7 @@ const Tickets = () => {
           {tickets.map((ticket, index) => (
             <a
               key={index}
-              href="https://docs.google.com/forms/d/1uelLpfmfbci9HoVZST41mkswA31ITon-Z9gYPvrEFmU/edit"
+              href="https://forms.gle/Szanf5dLytHondiM8"
               target="_blank"
               rel="noopener noreferrer"
               className={`

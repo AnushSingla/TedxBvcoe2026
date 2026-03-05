@@ -1,8 +1,8 @@
 const merchItems = [
-  { name: "Polo Front", image: "https://placehold.co/400x500/1a1a1a/eb0028?text=Polo+Front" },
-  { name: "Polo Back", image: "https://placehold.co/400x500/1a1a1a/eb0028?text=Polo+Back" },
-  { name: "Round Neck Front", image: "https://placehold.co/400x500/1a1a1a/eb0028?text=Round+Front" },
-  { name: "Round Neck Back", image: "https://placehold.co/400x500/1a1a1a/eb0028?text=Round+Back" },
+  { name: "Oversized Front", image: "frontmerch.jpeg" },
+  { name: "Oversized Back", image: "oversize.jpeg" },
+  { name: "Regular Front", image: "frontmerch.jpeg" },
+  { name: "Regular Back", image: "regular.jpeg" },
 ];
 
 const Merch = () => {
