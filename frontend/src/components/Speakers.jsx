@@ -15,23 +15,64 @@ const speakers = [
     link: "https://www.youtube.com/@gajendrapurohit",
     img: "gajendra.jpeg",
   },
-
-  /*
+  {
+    name: "Ankit Jain",
+    role: "Speaker",
+    description: "Mechanical engineer turned CEO, scaling sustainable industrial solutions worldwide.",
+    link: "https://cosmospumps.com/",
+    img: "ankit.png",
+  },
+  {
+    name: "Arjun Chopra",
+    role: "Speaker",
+    description: "CX leader, podcast host, and mentor bridging the gap between data and strategy.",
+    link: "https://www.youtube.com/@cxwithchopra",
+    img: "arjun.jpeg",
+  },
+  {
+    name: "Deepak Wadhwa",
+    role: "Speaker",
+    description: "Empowering aspiring traders by turning seven years of market struggle into success.",
+    link: "https://www.youtube.com/@deepakwadhwa.official",
+    img: "deepakk.jpg",
+  },
+  {
+    name: "Dr. Janani Jayapal",
+    role: "Speaker",
+    description: "Founder of Sculpt Dental,bridging clinical precision with community-driven care.",
+    link: "https://www.instagram.com/drjananijayapal",
+    img: "jaypal.jpeg",
+  },
+  {
+    name: "Dr. Manjit Hans",
+    role: "Speaker",
+    description: "Media strategist and Ph.D. scholar scripting the evolution of regional entertainment.",
+    link: "https://www.linkedin.com/in/dr-manjit-hans-6892891a/",
+    img: "manjit.jpeg",
+  },
+  {
+    name: "Dr. Piyhalli Roy Gupta",
+    role: "Speaker",
+    description: "Decoding invisible frequencies by bridging ancient wisdom with modern psychological therapy.",
+    link: "https://piyhalliroygupta.co.in/",
+    img: "piya.jpeg",
+  },
   {
     name: "Tarun Dokania",
     role: "Speaker",
-    description: "Author and content strategist transforming  finance into accessible, research-driven insights.",
-    link: "https://www.linkedin.com/in/tarundokania/",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop",
+    description: "Founder of TABD and author dedicated to jargon-free financial education for over 100k learners.",
+    link: "https://www.youtube.com/@TarunDokania",
+    img: "",
   },
   {
-    name: "DR. Piyhalli Roy Gupta",
+    name: "Venkatesh Gomatam",
     role: "Speaker",
-    description: "Bestselling author of Magical Power of Numbers, transforming lives through psychological therapy.",
-    link: "https://www.linkedin.com/in/piyhalli-roy-gupta-01721918a/",
-    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop",
+    description: "Founder of The Fortitude Keystone, restoring leadership depth for sustainable organizational scale.",
+    link: "https://www.thefortitudekeystone.com/",
+    img: "venka.jpeg",
   },
-  */
+
+ 
   {
     name: "Dipali Mathur Dayal",
     role: "Speaker",
