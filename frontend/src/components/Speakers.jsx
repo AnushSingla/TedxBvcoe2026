@@ -15,6 +15,13 @@ const speakers = [
     link: "https://www.youtube.com/@gajendrapurohit",
     img: "gajendra.jpeg",
   },
+   {
+    name: "Raghav Garg",
+    role: "Speaker",
+    description: "EdTech specialist and content strategist at PhysicsWallah and GeeksforGeeks.",
+    link: "https://www.linkedin.com/in/raghav-garg-262a9b1b4/",
+    img: "raghav.jpeg",
+  },
   {
     name: "Ankit Jain",
     role: "Speaker",
@@ -62,7 +69,7 @@ const speakers = [
     role: "Speaker",
     description: "Founder of TABD and author dedicated to jargon-free financial education for over 100k learners.",
     link: "https://www.youtube.com/@TarunDokania",
-    img: "",
+    img: "dok.jpeg",
   },
   {
     name: "Venkatesh Gomatam",
@@ -87,13 +94,7 @@ const speakers = [
     link: "https://www.linkedin.com/in/captdevalsoni/",
     img: "devalsoni.JPG",
   },
-  {
-    name: "Raghav Garg",
-    role: "Speaker",
-    description: "EdTech specialist and content strategist at PhysicsWallah and GeeksforGeeks.",
-    link: "https://www.linkedin.com/in/raghav-garg-262a9b1b4/",
-    img: "raghav.jpeg",
-  },
+ 
 ];
 
 const Speakers = () => {
