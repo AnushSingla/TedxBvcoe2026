@@ -26,7 +26,7 @@ const tickets = [
   {
     name: "VIP",
     price: "₹799",
-    features: ["Front Row Seats", "Premium Swag", "VIP Networking" , "Certificate" , "Lunch" , "Speaker Meet and Greet"],
+    features: ["Front Row Seats" , "VIP Networking" , "Certificate" , "Lunch" , "Speaker Meet and Greet"],
   },
   
 ];
