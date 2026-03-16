@@ -129,6 +129,7 @@ const heads = [
   },
 ];
 
+// 3D hover effect TeamCard
 const TeamCard = ({ member, large = false }) => {
   const initials = member.name
     .split(" ")
@@ -136,42 +137,38 @@ const TeamCard = ({ member, large = false }) => {
     .join("");
 
   const CardContent = () => (
-    <div className={`team-card h-full perspective-1000 ${member.link ? "cursor-pointer" : ""}`}>
+    <div
+      className={`team-card h-full perspective-1000 ${
+        member.link ? "cursor-pointer" : ""
+      }`}
+    >
       <div
-        className={`relative overflow-hidden rounded-xl mb-4 transition-transform duration-500 transform-gpu hover:rotate-y-6 hover:rotate-x-3 hover:scale-105 
-          /* Mobile:  height, Desktop: conditional height */
-          h-64 sm:h-72 ${large ? "lg:h-80" : "lg:h-56"}`}
+        className={`relative overflow-hidden rounded-lg mb-4 transition-transform duration-500 transform-gpu hover:rotate-y-6 hover:rotate-x-3 hover:scale-105 ${
+          large ? "h-70" : "h-48"
+        }`}
       >
         {member.img ? (
           <img
             src={member.img}
             alt={member.name}
-            // Use loading="lazy" to save mobile data
-            loading="lazy"
-            // aspect-square or video helps maintain consistency on small screens
-            className="w-full h-full object-cover object-top shadow-xl hover:shadow-2xl transition-shadow duration-500"
+            className="w-full h-full object-cover shadow-xl hover:shadow-2xl transition-shadow duration-500"
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center">
             <span className="text-3xl font-bold text-primary">{initials}</span>
           </div>
         )}
-        
-        {/* Link Icon Overlay */}
         {member.link && (
-          <div className="absolute top-3 right-3 bg-background/90 backdrop-blur-sm rounded-full p-2 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
+          <div className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
             <ExternalLink className="w-4 h-4 text-primary" />
           </div>
         )}
       </div>
-
-      <div className="px-1 text-center sm:text-left">
-        <h4 className="text-lg font-bold text-foreground leading-tight mb-1">{member.name}</h4>
-        <p className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">{member.role}</p>
-        <p className="text-muted-foreground text-sm line-clamp-2 italic sm:not-italic">
-          "{member.description}"
-        </p>
-      </div>
+      <h4 className="text-lg font-bold text-foreground mb-1">{member.name}</h4>
+      <p className="text-primary text-sm font-medium mb-2">{member.role}</p>
+      <p className="text-muted-foreground text-sm line-clamp-2">
+        {member.description}
+      </p>
     </div>
   );
 
@@ -193,32 +190,28 @@ const TeamCard = ({ member, large = false }) => {
 
 const Team = () => {
   return (
-    <section id="team" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-background">
+    <section id="team" className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-black text-center gradient-text mb-16 tracking-tighter">OUR TEAM</h2>
+        <h2 className="section-header gradient-text mb-16">OUR TEAM</h2>
 
-        {/* Organizers - Optimized for 1 col on mobile, 2 on desktop */}
-        <div className="mb-24">
-          <h3 className="text-2xl font-bold text-center text-foreground/80 mb-10 flex items-center justify-center gap-4">
-            <span className="h-px w-8 bg-primary/30 hidden sm:block"></span>
+        {/* Organizers */}
+        <div className="mb-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
             Organizers
-            <span className="h-px w-8 bg-primary/30 hidden sm:block"></span>
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {organizers.map((member, index) => (
               <TeamCard key={index} member={member} large />
             ))}
           </div>
         </div>
 
-        {/* Department Heads - Responsive Grid scaling */}
+        {/* Department Heads */}
         <div>
-          <h3 className="text-2xl font-bold text-center text-foreground/80 mb-10 flex items-center justify-center gap-4">
-            <span className="h-px w-8 bg-primary/30 hidden sm:block"></span>
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
             Department Heads
-            <span className="h-px w-8 bg-primary/30 hidden sm:block"></span>
           </h3>
-          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 gap-y-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {heads.map((member, index) => (
               <TeamCard key={index} member={member} />
             ))}

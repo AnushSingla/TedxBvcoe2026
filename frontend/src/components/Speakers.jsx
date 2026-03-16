@@ -75,7 +75,7 @@ const speakers = [
     name: "Venkatesh Gomatam",
     role: "Speaker",
     description: "Founder of The Fortitude Keystone, restoring leadership depth for sustainable organizational scale.",
-    link: "https://www.thefortitudekeystone.com/",
+    link: "https://www.linkedin.com/in/venkatesh-gomatam-ba888a18?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     img: "venka.jpeg",
   },
 
