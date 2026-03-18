@@ -88,7 +88,7 @@ const speakers = [
     img: "dipali.jpeg",
   },
   {
-    name: "Deval Soni",
+    name: "Capt. Deval Soni",
     role: "Speaker",
     description: "A320 Commander and co-founder of Golden Epaulettes Aviation.",
     link: "https://www.linkedin.com/in/captdevalsoni/",
