@@ -26,7 +26,7 @@ const speakers = [
     name: "Ankit Jain",
     role: "Speaker",
     description: "Mechanical engineer turned CEO, scaling sustainable industrial solutions worldwide.",
-    link: "https://cosmospumps.com/",
+    link: "https://www.linkedin.com/in/ankitjain2/",
     img: "ankit.png",
   },
   {
