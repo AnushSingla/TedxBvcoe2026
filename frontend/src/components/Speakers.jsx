@@ -113,7 +113,7 @@ const Speakers = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="speaker-card group block"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative overflow-hidden aspect-[4/5] rounded-lg">
                 <img
